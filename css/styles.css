@@ -1,0 +1,119 @@
+/* 
+Name: Alex Miller
+File Name: styles.css
+Date: 9/19/24
+*/ 
+
+/* CSS Reset */ 
+body, header, nav, main, footer, img, h1, h2, h3, h4{
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+} 
+
+/* Style rules for body and images */ 
+body{ 
+    background-color: #80999b;
+} 
+
+img{
+    max-width: 100%; 
+    display: block;
+} 
+
+/* Style rules for header */ 
+header{
+    background-color: #0a0a3f;
+}
+
+header h1{
+    text-align: center; 
+	font-size: 4em; 
+	font-family: "Protest Guerrilla", Times, serif; 
+	padding: 2%; 
+	color: #fff;
+}
+
+/* Style rules for navigation area */ 
+nav{
+    background-color: #3298c7;
+} 
+
+nav ul{
+    list-style-type: none; 
+    margin: 0; 
+    text-align: center;
+} 
+
+nav li{
+    display: inline-block; 
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: bold;
+} 
+
+nav li a{ 
+	display: block; 
+	color: #141616;
+	padding-top: 0.5em; 
+	padding-bottom: 0.5em;
+	padding-left: 2em; 
+	padding-right: 2em; 
+	text-decoration: none; 
+} 
+
+/* Style rules for main content */ 
+main{
+    padding: 1.5%;
+    overflow: auto;
+} 
+
+main h1{
+    padding-bottom: 1.5%;
+    text-align: center;
+    font-size: 2em; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.image{
+    border: 6px solid; 
+    margin-left: auto; 
+    margin-right: auto;
+} 
+
+#me{
+    text-align: center;
+    padding-top: 1%; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+#html{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+h3{
+    padding-top: 1%; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+} 
+
+#contact{
+    text-align: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+main h4{
+    padding: 0.5%
+}
+.map{
+    border: 8px solid #000;
+}
+
+/*Style rules for footer */ 
+footer{
+    text-align: center;
+} 
