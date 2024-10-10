@@ -1,0 +1,66 @@
+/* 
+Author: Alex Miller 
+Date: 10/9/24 
+File Name: apply08.css 
+*/ 
+
+/* CSS Reset */
+body, main, footer, table{
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+} 
+
+/* Style rule for body */
+body{
+    background-color: #ffe5dc; 
+    font-family: sans-serif;
+} 
+
+/* Style rule for footer */
+footer{
+    font-size: .70em; 
+    text-align: center;
+} 
+
+/* Style rule for table */
+table{
+	width: 50%;
+	margin-top: 0; 
+	margin-bottom: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	border: 7px solid #fd4d0c; 
+    box-shadow: 10px 15px 10px #792101;
+} 
+
+/* Style rule for all table elements */
+table, tr, th, td{
+    border-collapse: collapse; 
+    padding: 2%;
+}
+
+/* Style rule for caption element */
+caption{
+    font-size: 2em; 
+    padding: 2%; 
+    margin-top: 2%; 
+    font-weight: bold;
+} 
+
+/* Style rule for th element */
+th{
+    border: 1px solid #fff; 
+    background-color: #a22c02; 
+    color: #fff;
+}
+
+/* Style rule for td element */
+td{
+    border: 1px solid #a22c02;
+} 
+
+/* Style rule for odd tr elements */
+tr:nth-child(odd){
+    background-color: #fe9772;
+}
