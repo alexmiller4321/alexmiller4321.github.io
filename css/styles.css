@@ -28,41 +28,35 @@ header{
 
 header h1{
     text-align: center; 
-	font-size: 4em; 
+	font-size: 3.5em; 
 	font-family: "Protest Guerrilla", Times, serif; 
 	padding: 2%; 
 	color: #fff;
 }
 
-/* Style rules for navigation area */ 
-nav{
-    background-color: black; 
-    padding: 1%;
-    margin-bottom: 1%;
-} 
-
-nav ul{
-    list-style-type: none;
-    text-align: center;
-} 
-
-nav li{
-    font-size: 2em;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: bold; 
-    border-top: 1px solid #fff;
-} 
-
-nav li:first-child{
-    border-top: none;
+/* Style rules for hamburger menu */
+.mobile-nav a{
+	color: #fff; 
+    background-color: #000;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+	text-align: center; 
+	font-size: 2em; 
+	text-decoration: none; 
+	padding: 3%; 
+	display: block;
 }
 
-nav li a{ 
+.mobile-nav a.menu-icon{
 	display: block; 
-	color: #fff;
-	padding: .5em 1em; 
-	text-decoration: none; 
-} 
+	position: absolute; 
+	right: 0; 
+	top: 0;
+}
+
+.tablet-desktop, #menu-links{
+    display: none;
+}
 
 /* Style rules for main content */ 
 main{
@@ -103,10 +97,71 @@ h3{
 
 main ul{
     text-align: center;
+    list-style-type: none; 
+    padding-left: 0.5em; 
+    padding-right: 0.5em;
+}
+
+#projects ul{
+    text-align: center;
     padding: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style-type: none;
 } 
+
+#projects li{
+    padding: 0.3em;
+}
+
+#projects li a{
+    text-decoration: none;
+    color: #fff;
+    border: 0.5px solid #000; 
+    border-radius: 100px;
+    background-color: #000;
+    padding-left: 0.5em; 
+    padding-right: 0.5em;
+}
+
+#about-me{
+    padding: 0.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#about-me h3{
+    padding-top: 0em;
+}
+
+#about-me h4{
+    font-size: 1.2em;
+}
+
+table{
+    width: 50%;
+    margin: 0 auto;
+    border: 5px solid #000;
+    box-shadow: 10px 15px 10px #000;
+}
+
+table, tr, th, td{
+    border-collapse: collapse; 
+    padding: 2%;
+}
+
+th, td{
+    border: 2px solid #000;
+}
+
+th{
+    background-color: rgb(24, 24, 95);
+    color: #fff;
+}
+
+td{
+    background-color: rgb(126, 216, 223);
+    text-align: center;
+}
 
 #contact{
     text-align: center; 
@@ -114,11 +169,43 @@ main ul{
 } 
 
 main h4{
-    padding: 0.5%
+    padding: 0.5%;
 }
 .map{
     border: 8px solid #000; 
     border-radius: 5%;
+    width: auto;
+}
+
+#form{
+    margin-top: 2%; 
+    background-color: #62d3ff; 
+    padding: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form h2{
+    text-align: center;
+}
+
+fieldset, input{
+    margin-bottom: 2%;
+}
+
+label{
+    display: block; 
+    padding-top: 3%;
+}
+
+form #submit{
+    margin: 0 auto; 
+    display: block; 
+    border: none; 
+    padding: 2%; 
+    color: #fff;
+    background-color: #000; 
+    font-size: 1em; 
+    border-radius: 10px;
 }
 
 /*Style rules for footer */ 
@@ -128,30 +215,80 @@ footer{
 
 /*Media Query for desktop Viewport*/
 @media screen and (min-width: 1015px), print{ 
-    
+    header h1{
+        font-size: 4em;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .tablet-desktop{
+		display: block;
+	} 
+
     nav{
+        background-color: black; 
         margin-bottom: 0; 
         padding: 0;
     }
     
     nav ul{
+        list-style-type: none;
         margin: 0;
+        text-align: center;
     }
     
     nav li{
+        font-size: 2em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
         border-top: none; 
         display: inline-block;
     } 
 
     nav li a{
-        padding-top: 0.5em; 
-	    padding-bottom: 0.5em;
-	    padding-left: 2em; 
-	    padding-right: 2em;
+        display: block;
+        color: #fff;
+        text-decoration: none; 
+        padding: 0.5em 2em;
     } 
 
     nav li a:hover{
 		color: #000; 
 		background-color: #fff;
-	}
+        transition: 0.55s;
+	} 
+
+    .image:hover{
+        transform: scale(1.1);
+    } 
+
+    #projects li:hover{
+        transform: scale(1.25);
+        transition: 0.5s;
+    } 
+
+    #projects li a:hover{
+        color: #000; 
+        background-color: #fff; 
+        transition: 0.5s;
+    }
+
+    .map{
+        width: 32.5%;
+    }
+
+    #form{
+        border-radius: 100px;
+        width: 40%;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    #submit:hover{
+        color: #000; 
+        background-color: #fff;
+        transition: 0.55s;
+    }
 }

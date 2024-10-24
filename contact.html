@@ -16,43 +16,76 @@
 </head> 
 <body> 
 
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="about.html">About Me</a>
+			<a href="projects.html">Projects</a>
+			<a href="contact.html">Contact Info</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
 <!-- Use the header area for the website name or logo; header content should be static -->
-<header> 
-	<h1>Alex Miller</h1>
-</header> 
+	<header id="header-name"> 
+		<h1>Alex Miller</h1>
+	</header> 
 
 <!-- Use the nav area to add hyperlinks to other pages within the website; nav content should be static -->
-<nav> 
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About Me</a></li>
-		<li><a href="projects.html">Projects</a></li>
-		<li><a href="contact.html">Contact Info</a></li>
-    </ul>
-</nav> 
+	<nav class="tablet-desktop"> 
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact Info</a></li>
+    	</ul>
+	</nav> 
 
 <!-- Use the main area to add the main content of the webpage; main content should be static -->
-<main> 
-	<div id="contact">
+	<main> 
+		<div id="contact">
 		
-		<h1>Contact Info</h1>
-		<h4>Email me: <a href="mailto:alexandermm2130@gmail.com">alexandermm2130@gmail.com</a></h4> 
-		<h4>Home School Address: 10084 Ravenna Road, Twinsburg, OH 44087</h4> 
+			<h1>Contact Info</h1>
+			<h4>Email me: <a href="mailto:alexandermm2130@gmail.com">alexandermm2130@gmail.com</a></h4> 
+			<h4>Home School Address: 10084 Ravenna Road, Twinsburg, OH 44087</h4> 
 	
-		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.6173436819777!2d-81.45364872353791!3d41.31718740034596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88311f18957f605f%3A0x15101bf641a96ad4!2sTwinsburg%20High%20School!5e0!3m2!1sen!2sus!4v1725646328852!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.6173436819777!2d-81.45364872353791!3d41.31718740034596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88311f18957f605f%3A0x15101bf641a96ad4!2sTwinsburg%20High%20School!5e0!3m2!1sen!2sus!4v1725646328852!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+			
+			<h4>CVCC Address: 8001 Brecksville Road, Brecksville, OH 44141</h4> 
 	
-		<h4>CVCC Address: 8001 Brecksville Road, Brecksville, OH 44141</h4> 
-	
-		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.359285871373!2d-81.62700222353685!3d41.34454379865092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830e6dd7da6a0c5%3A0xe21fba97e75c809!2sCuyahoga%20Valley%20Career%20Center!5e0!3m2!1sen!2sus!4v1725646534673!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-	</div>
-</main> 
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.359285871373!2d-81.62700222353685!3d41.34454379865092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830e6dd7da6a0c5%3A0xe21fba97e75c809!2sCuyahoga%20Valley%20Career%20Center!5e0!3m2!1sen!2sus!4v1725646534673!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    	</div>
+
+		<div id="form"> 
+			<h2>Contact Form</h2> 
+			<form class="form-grid"> 
+				<fieldset>
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" required> 
+
+					<label for="phone">Phone Number:</label> 
+					<input type="tel" name="phone" id="phone" required> 
+
+					<label for="email">Email:</label> 
+					<input type="email" name="email" id="email" required>
+				
+					<label for="favfood">Favorite Food:</label> 
+					<input type="text" name="favfood" id="favfood" required>
+
+					<input type="submit" id="submit" value="Submit" class="btn">
+				</fieldset>
+			</form>
+		</div>
+	</main> 
 
 <!-- Use the footer area to add webpage footer content; footer content should be static -->
-<footer> 
-	<p>&copy; Copyright 2024. All Rights Reserved.</p>
-</footer>
+	<footer> 
+		<p>&copy; Copyright 2024. All Rights Reserved.</p>
+	</footer>
 
+	<script src="scripts/script.js"></script>
 </body>
 
 </html> 

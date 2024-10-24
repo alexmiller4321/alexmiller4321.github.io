@@ -15,32 +15,88 @@
 	<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
 </head> 
 <body> 
+	
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="about.html">About Me</a>
+			<a href="projects.html">Projects</a>
+			<a href="contact.html">Contact Info</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
 
-<!-- Use the header area for the website name or logo; header content should be static -->
-<header> 
-	<h1>Alex Miller</h1>
-</header> 
+	<!-- Use the header area for the website name or logo; header content should be static -->
+	<header id="header-name"> 
+		<h1>Alex Miller</h1>
+	</header> 
 
-<!-- Use the nav area to add hyperlinks to other pages within the website; nav content should be static -->
-<nav> 
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About Me</a></li>
-		<li><a href="projects.html">Projects</a></li>
-		<li><a href="contact.html">Contact Info</a></li>
-    </ul>
-</nav> 
+	<!-- Use the nav area to add hyperlinks to other pages within the website; nav content should be static -->
+	<nav class="tablet-desktop"> 
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact Info</a></li>
+    	</ul>
+	</nav> 
+	
+	
+	<!-- Use the main area to add the main content of the webpage; main content should be static -->
+	<main> 
+		<h1>About Me</h1>
+		<div id="about-me">
+			<h3>Hi, my name is Alex Miller, and I am currently a student at both Twinsburg High School and Cuyahoga Valley Career Center.</h3>
+			<h4>Hobbies/Interests:</h4> 
+			<ul>
+				<li>Hiking</li> 
+				<li>Swimming</li> 
+				<li>Playing Video Games</li> 
+				<li>Watching NFL/NBA games</li> 
+				<li>Stressing Myself Out</li>
+			</ul>
+		</div>
+		<table> 
+			<tr><!-- Row 1 -->
+				<th colspan="2">Certifications</th>
+			</tr>
 
-<!-- Use the main area to add the main content of the webpage; main content should be static -->
-<main> 
-	<h1>About Me</h1>
-</main> 
+			<tr><!-- Row 2 -->
+				<th>Name</th> 
+				<th>Date Passed</th>
+			</tr> 
 
-<!-- Use the footer area to add webpage footer content; footer content should be static -->
-<footer> 
-	<p>&copy; Copyright 2024. All Rights Reserved.</p>
-</footer>
+			<tr><!-- Row 3 -->
+				<td>IC3 Digital Literacy Certification</td> 
+				<td>10/26/2023</td>
+			</tr>
 
+			<tr><!-- Row 4 -->
+				<td>Microsoft Word</td>
+				<td>3/22/2024</td>
+			</tr>
+
+			<tr><!-- Row 5 -->
+				<td>Microsoft Powerpoint</td>
+				<td>4/19/2024</td>
+			</tr>
+
+			<tr><!-- Row 6 -->
+				<td>IT Specialist: Java</td>
+				<td>6/3/2024</td>
+			</tr>
+		</table>
+	</main> 
+	
+	
+	<!-- Use the footer area to add webpage footer content; footer content should be static -->
+	<footer> 
+		<p>&copy; Copyright 2024. All Rights Reserved.</p>
+	</footer>
+	
+	<script src="scripts/script.js"></script>
 </body>
-
 </html> 
