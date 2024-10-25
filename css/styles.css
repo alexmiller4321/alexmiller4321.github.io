@@ -79,12 +79,10 @@ main h1{
 } 
 
 #me{
-    text-align: center;
-    padding-top: 1%; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 1%;  
 } 
 
-#html{ 
+h2{ 
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
@@ -208,6 +206,15 @@ form #submit{
     border-radius: 10px;
 }
 
+ol{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bold;
+}
+
+ol li{
+    padding: 0.5%;
+}
+
 /*Style rules for footer */ 
 footer{
     text-align: center;
@@ -289,6 +296,15 @@ footer{
     #submit:hover{
         color: #000; 
         background-color: #fff;
-        transition: 0.55s;
+        transition: 0.55s; 
+        cursor: pointer;
+    }
+
+    #hobbies{
+        text-align: left;
+    }
+
+    #tent{
+        margin-left: 0; 
     }
 }
