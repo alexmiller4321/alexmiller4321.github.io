@@ -271,12 +271,8 @@ footer{
         transform: scale(1.1);
     } 
 
-    #projects li:hover{
-        transform: scale(1.25);
-        transition: 0.5s;
-    } 
-
     #projects li a:hover{
+        transform: scale(1.25);
         color: #000; 
         background-color: #fff; 
         transition: 0.5s;
