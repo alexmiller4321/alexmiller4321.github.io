@@ -11,13 +11,13 @@
 */
 
 // Global variables
-let cashBox = document.getElementById(cash);
-let billBox = document.getElementById(bill);
-let changeBox = document.getElementById(change);
+let cashBox = document.getElementById('cash');
+let billBox = document.getElementById('bill');
+let changeBox = document.getElementById('change');
 
 // Event handlers to be run when the cash or bill value changes
-cashBox.addEventListener("change", runRegister);
-billBox.addEventListener("change", runRegister);
+cashBox.addEventListener("change", runTheRegister);
+billBox.addEventListener("change", runTheRegister);
 
 // Function to reset the values in the web page
 function zeroTheRegister() {
@@ -42,6 +42,17 @@ function runTheRegister() {
    changeBox.value = formatCurrency(changeValue); // format the change as currency
    
    calcChange(changeValue); // Determine the units of currency needed for the change
+
+   try{
+      if(!(changeValue >= 0))
+      {
+          throw "Cash amount doesn't cover the bill";
+      }
+      changeBox.value = formatCurrency(changeValue);
+      calcChange(changeValue);
+     }catch(error){
+      document.getElementById('warning').innerHTML = "Cash amount doesn't cover the bill";
+     }
 }
 
 // Function to calculate the change by each unit of currency
